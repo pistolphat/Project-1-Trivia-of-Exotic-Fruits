@@ -1,38 +1,55 @@
+body {
+    margin: 5px;
+}
 h1 {
-    font-family: cursive;
-    font-size: 88px;
-    text-align: center;
-    border: 3px solid black;
-    padding-bottom: 20px;
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0px;
+  border: 3px solid black;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-    border: 3px solid black;
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  border: 3px solid black;
+  grid-gap: 50px;
+  padding: 50px;
 }
-
+.picbox {
+    border: 2px solid black;
+    text-align: center;
+}
 .choicesContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-    grid-gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 25px;
 }
 
 .box {
-    border: 3px solid black;
-    background-color: lightblue;
-    padding: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+  border: 3px solid black;
+  background-color: lightblue;
+  padding: 15px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
 }
 
-#qbox {
-    border: 1px solid black;
+span {
+  font-size: 80px;
+  font-family: cursive;
+  color: pink;
 }
 
-#hint {
-    border: 1px solid black;
+p {
+  border: 2px solid yellow;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
 }
