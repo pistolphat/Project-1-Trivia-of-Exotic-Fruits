@@ -1,9 +1,9 @@
 h1 {
+  border: 3px solid black;
   font-family: "Shrikhand", cursive;
   font-size: 20px;
+  padding: 20px;
   text-align: center;
-  padding: 20px 0px;
-  border: 3px solid black;
 }
 
 .mainContainer {
@@ -12,31 +12,42 @@ h1 {
   grid-template-rows: 1fr 1fr;
   border: 3px solid black;
   grid-gap: 25px;
-  padding: 25px 10px 25px 10px;
+  padding: 10px;
 }
 
 .choicesContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  text-align: center;
   grid-gap: 10px;
+  text-align: center;
 }
 
 .boxAnswer {
   border: 3px solid black;
   background-color: lightblue;
-  padding: 10px;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
 }
 
 img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   /* -webkit-filter: blur(2px);
   filter: blur(2px); */
 }
 .picbox {
   border: 3px solid black;
   border-radius: 5px;
+}
+
+.description {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  background-color: black;
+  border: 3px solid gold;
+  color: white;
+  line-height: 50px;
+  text-align: center;
 }

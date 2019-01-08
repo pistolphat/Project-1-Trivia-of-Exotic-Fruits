@@ -11,30 +11,31 @@
   <body>
     <h1>Triviaaaaaaaaaaaaa</h1>
     <div class="mainContainer">
-      <div class="picbox 1"><img src="fruits/durian.jpg" alt=""></div>
-      <div class="picbox 2"><img src="fruits/guava.jpg" alt=""></div>
-      <div class="picbox 3"><img src="fruits/jackfruit.png" alt=""></div>
-      <div class="picbox 4"><img src="fruits/rambuten.jpg" alt=""></div>
-      <div class="picbox 5"><img src="fruits/lychee.jpg" alt=""></div>
-      <div class="picbox 6"><img src="fruits/mangosteen.jpg" alt=""></div>
-      <div class="picbox 7"><img src="fruits/starfruit.jpeg" alt=""></div>
-      <div class="picbox 8"><img src="fruits/Dragonfruit.jpg" alt=""></div>
-      <div class="picbox 9"><img src="fruits/longan.jpg" alt=""></div>
-      <div class="picbox 10"><img src="fruits/passion.jpg" alt=""></div>
+      <div class="picbox 1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="fruits/durian.jpg" alt=""></div>
+      <div class="picbox 2" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="fruits/guava.jpg" alt=""></div>
+      <div class="picbox 3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="fruits/jackfruit.png" alt=""></div>
+      <div class="picbox 4" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="fruits/rambuten.jpg" alt=""></div>
+      <div class="picbox 5" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="fruits/lychee.jpg" alt=""></div>
+      <div class="picbox 6" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="fruits/mangosteen.jpg" alt=""></div>
+      <div class="picbox 7" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="fruits/starfruit.jpeg" alt=""></div>
+      <div class="picbox 8" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="fruits/Dragonfruit.jpg" alt=""></div>
+      <div class="picbox 9" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="fruits/longan.jpg" alt=""></div>
+      <div class="picbox 10" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="fruits/passion.jpg" alt=""></div>
     </div>
     <br />
-    <br />
+    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt maiores perspiciatis cumque facere? Optio?</div>
+    <br>
     <div class="choicesContainer">
-      <div class="boxAnswer">Durian</div>
-      <div class="boxAnswer">Starfruit</div>
-      <div class="boxAnswer">Passion Fruit</div>
-      <div class="boxAnswer">Guava</div>
-      <div class="boxAnswer">Rambutan</div>
-      <div class="boxAnswer">Lychee</div>
-      <div class="boxAnswer">Jackfruit</div>
-      <div class="boxAnswer">Mangosteen</div>
-      <div class="boxAnswer">Longan</div>
-      <div class="boxAnswer">Dragonfruit</div>
+      <div class="boxAnswer" id="durian" draggable="true"  ondragstart="drag(event)" ondragover="allowDrop(event)">Durian</div>
+      <div class="boxAnswer" id="starfruit" draggable="true"  ondragstart="drag(event)" ondragover="allowDrop(event)">Starfruit</div>
+      <div class="boxAnswer" id="passionfruit" draggable="true"  ondragstart="drag(event)" ondragover="allowDrop(event)">Passion Fruit</div>
+      <div class="boxAnswer" id="guava" draggable="true"  ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">Guava</div>
+      <div class="boxAnswer" id="rambutan" draggable="true"  ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">Rambutan</div>
+      <div class="boxAnswer" id="lychee" draggable="true"  ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">Lychee</div>
+      <div class="boxAnswer" id="jackfruit" draggable="true"  ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">Jackfruit</div>
+      <div class="boxAnswer" id="mangosteen" draggable="true"  ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">Mangosteen</div>
+      <div class="boxAnswer" id="longan" draggable="true"  ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">Longan</div>
+      <div class="boxAnswer" id="dragonfruit" draggable="true"  ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">Dragonfruit</div>
     </div>
     <script src="script.js"></script>
   </body>
