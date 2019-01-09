@@ -72,8 +72,6 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 
-
-
 // console.log(exoticFruits[0]);
 // console.log(eachQuestion)
 // FullD: function () {
