@@ -10,15 +10,16 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   border: 3px solid black;
-  grid-gap: 10px;
-  padding: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+  padding: 10px 10px 30px 10px;
   border-radius: 5px;
 }
 
 .choicesContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 8px;
   text-align: center;
 }
 
@@ -35,11 +36,11 @@ img {
 
 #description {
   font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
+  font-size: 20px;
   background-color: black;
   border: 5px solid goldenrod;
   color: white;
-  line-height: 40px;
+  line-height: 35px;
   text-align: center;
 }
 .boxAnswer {
@@ -47,6 +48,6 @@ img {
   background-color: black;
   font-family: "Courier New", Courier, monospace;
   /* font-weight: bold; */
-  font-size: 25px;
+  font-size: 20px;
   color: white;
 }
