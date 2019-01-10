@@ -1,15 +1,15 @@
 // Arrays of 10 fruits & descriptions - push on Question Box w/ each Next Clicks
 let exoticFruits = [
-  "Durian - Known for its pungent smell and spikey exterior, it is very well known fruit in Southeast Asia.",
-  "Starfruit - Know for its citrus and tangy flavor and its striking resemblance to a 5 pointed figure.",
-  "Passion Fruit - Rich in Vitamin C, this citrus and seedy fruit is lightweight and popular in various drinks.",
-  "Guava - Common tropical fruit with a unique flavour and fragrance. The exterior is hard, but soften over time.",
-  "Rambutan - Appearance can be deceiving, this ball-size fruit has a white and flesh-like interior and a hardened seed.",
-  "Lychee - With a slightly harden shell, this fruit’s interior is sweetly scented and a large central stone.",
-  "Jackfruit - Oddly shaped, this fruit can grow really big in size and weight over a period of time. It’s yellow hue “meat” is fragrant and distinctable.",
-  "Mangosteen - Originated from Southeast Asia, this exotic fruit have a hard exterior shell, yet fibrous-like flesh.",
-  "Longan - Tropical and small size shaped, this fruit grows together in pod like branches.",
-  "Dragonfruit - Varies in size and colors, this exotic fruit contains many chia-like seeds within its white and red interior."
+  "1. Durian - Known for its pungent smell and spikey exterior, it is very well known fruit in Southeast Asia.",
+  "2. Starfruit - Know for its citrus and tangy flavor and its striking resemblance to a 5 pointed figure.",
+  "3. Passion Fruit - Rich in Vitamin C, this citrus and seedy fruit is lightweight and popular in various drinks.",
+  "4. Guava - Common tropical fruit with a unique flavour and fragrance. The exterior is hard, but soften over time.",
+  "5. Rambutan - Appearance can be deceiving, this ball-size fruit has a white and flesh-like interior and a hardened seed.",
+  "6. Lychee - With a slightly harden shell, this fruit’s interior is sweetly scented and a large central stone.",
+  "7. Jackfruit - Oddly shaped, this fruit can grow really big in size and weight over a period of time. It’s yellow hue “meat” is fragrant and distinctable.",
+  "8. Mangosteen - Originated from Southeast Asia, this exotic fruit have a hard exterior shell, yet fibrous-like flesh.",
+  "9. Longan - Tropical and small size shaped, this fruit grows together in pod like branches.",
+  "10. Dragonfruit - Varies in size and colors, this exotic fruit contains many chia-like seeds within its white and red interior."
 ];
 //Description bar reset to Default Message, when clicked.
 let description = document.getElementById('description')
