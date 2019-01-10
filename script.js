@@ -1,15 +1,15 @@
 // Arrays of 10 fruits & descriptions - push on Question Box w/ each Next Clicks
 let exoticFruits = [
   "1. Durian - Known for its pungent smell and spikey exterior, this fruit is really FOUL!",
-  "2. Starfruit - With its striking resemblance to a 5 pointed figure.",
-  "3. Passion Fruit - This citrus, seedy, and gooey fruit is lightweight and popular in various drinks.",
-  "4. Guava - A common tropical fruit, this apple-like fruit is nothing like an apple. The seeds are hard, but edible.",
-  "5. Rambutan - Appearance can be deceiving, this urchin,ball-sized like fruit is nothing like you've seen before",
+  "2. Starfruit - This fruit is has a striking resemblance to a 5 pointed figure.",
+  "3. Passion Fruit - This seedy, gooey, and citrus-like fruit is lightweight and popular in various drinks.",
+  "4. Guava - A common tropical fruit, this apple-like fruit is nothing like an apple. The seeds are tough, but edible.",
+  "5. Rambutan - Appearance can be deceiving, this urchin, ball-sized like fruit is nothing like you've seen before.",
   "6. Lychee - With a slightly harden shell, this fruit’s interior is sweetly scented that contains a large central stone.",
-  "7. Jackfruit - Oddly shaped, this fruit can grow really big in size and weight over a period of time. It’s yellow hue “meat” is fragrant and distinctable.",
+  "7. Jackfruit - Oddly shaped, this fruit can grow really big in size and weight over a period of time. It’s yellow color “meat” is fragrant and distinctable.",
   "8. Mangosteen - This plum-colored fruit is hard on the oustide, fibrous on the inside.",
   "9. Longan - Small round balls of fury, this fruit grows together in pod like branches.",
-  "10. Dragonfruit - Varies in size and colors, this exotic fruit contains many chia-like seeds within its white and red interior."
+  "10. Dragonfruit - Varies in size and colors, this exotic fruit contains many chia-like seeds within its interior."
 ];
 //Description bar reset to Default Message, when clicked.
 let description = document.getElementById('description')
