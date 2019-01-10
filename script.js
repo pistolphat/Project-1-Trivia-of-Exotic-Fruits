@@ -91,7 +91,7 @@ function showAnswers () {
 }
 
 
-console.log(header)
+// console.log(header)
 // console.log(showAnswers())
 // console.log(question1);
 // console.log(eachQuestion)
@@ -100,11 +100,11 @@ console.log(header)
 // for (let i = 0; i < exoticFruits.length; i++)
 
 //Check Scoring function
-function checkScore() {
-  if (durianBox.innerHTML === document.getElementById('a1').innerHTML) {
-    durianBox.style.background = "green";
-  } else {
-    durianBox.style.background = "red";
-  }
-}
+// function checkScore() {
+//   if (durianBox.innerHTML === document.getElementById('a1').innerHTML) {
+//     durianBox.style.background = "green";
+//   } else {
+//     durianBox.style.background = "red";
+//   }
+// }
 

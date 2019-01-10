@@ -6,7 +6,7 @@ body {
   display: flex;
   height: 88px;
   padding: 5px 0 10px 0;
-  opacity: .6;
+  opacity: .3;
   background-image: url("fruits/trivia2.jpg");
   margin: 3px 0px;
   cursor: pointer;
@@ -16,10 +16,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  border: 3px solid black;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  padding: 5px;
+  border: 2px solid black;
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+  padding: 5px 5px 15px 5px;
   border-radius: 5px;
   margin-bottom: -10px;
 }
@@ -48,21 +48,27 @@ img {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   background-color: black;
-  border: 5px solid goldenrod;
+  border: 2px solid goldenrod;
   color: white;
-  line-height: 30px;
+  line-height: 40px;
   text-align: center;
 
 }
 .boxAnswer {
   background-color: black;
   font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   text-align: center;
   border-radius: 2px;
+  line-height: 25px;
   cursor: grab;
+  border: 2px solid goldenrod;
 }
+
+/* .boxAnswer:hover {
+  background-color: rgb(222, 232, 43);
+} */
 
 .answer {
   font-family: 'Courier New', Courier, monospace;
