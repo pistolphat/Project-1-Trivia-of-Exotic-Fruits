@@ -14,7 +14,7 @@ let exoticFruits = [
 //Description bar reset to Default Message, when clicked.
 let description = document.getElementById('description')
 description.addEventListener('click', resetD);
-function resetD () {description.innerHTML = "Ready? Click and drag to appropriate picture. Click each box for additional help."};
+function resetD () {description.innerHTML = "CLICK and DRAG to appropriate picture. Click each box for additional help."};
 
 //Each clickable box, displays different statement based on different fruits.
 let durianBox = document.getElementById("durian");
@@ -60,7 +60,7 @@ function question10() {description.innerHTML = exoticFruits[9]};
 
 // Click, drag, and drop
 function allowDrop(ev) {
-  ev.preventDefault();
+ev.preventDefault();
 }
 
 function drag(ev) {
@@ -73,11 +73,17 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 
+//make the banner, clickable to show answers
+document.querySelector("#header").addEventListener("click", showAnswer); //grab the header and add Click event
+let answer = document.querySelectorAll(".answer")
+
+function showAnswer() {
+  answer.style.visibility = "initial"
+};
 
 
-
-
-console.log(question1);
+console.log(answer);
+// console.log(question1);
 // console.log(eachQuestion)
 // FullD: function () {
 // return this.Name + " - " + this.Description}}
