@@ -11,11 +11,12 @@ let exoticFruits = [
   "Longan - Tropical and small size shaped, this fruit grows together in pod like branches.",
   "Dragonfruit - Varies in size and colors, this exotic fruit contains many chia-like seeds within its white and red interior."
 ];
-
+//Description bar reset to Default Message, when clicked.
 let description = document.getElementById('description')
 description.addEventListener('click', resetD);
-function resetD () {description.innerHTML = "Click on each description for help."};
+function resetD () {description.innerHTML = "Ready? Click and drag to appropriate picture. Click each box for additional help."};
 
+//Each clickable box, displays different statement based on different fruits.
 let durianBox = document.getElementById("durian");
 durianBox.addEventListener("click", question1);
 function question1() {description.innerHTML = exoticFruits[0]}
@@ -72,7 +73,11 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 
-// console.log(exoticFruits[0]);
+
+
+
+
+console.log(question1);
 // console.log(eachQuestion)
 // FullD: function () {
 // return this.Name + " - " + this.Description}}
