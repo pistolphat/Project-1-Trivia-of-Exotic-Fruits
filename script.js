@@ -14,7 +14,7 @@ let exoticFruits = [
 //Description bar reset to Default Message, when clicked.
 let description = document.getElementById('description')
 description.addEventListener('click', resetD);
-function resetD () {description.innerHTML = "CLICK and DRAG to appropriate picture. Click each box for additional help."};
+function resetD () {description.innerHTML = "Click each box for additional help. CLICK & DRAG to the correct picture."};
 
 //Each clickable box, displays different statement based on different fruits.
 let durianBox = document.getElementById("durian");
@@ -74,17 +74,37 @@ function drop(ev) {
 }
 
 //make the banner, clickable to show answers
-document.querySelector("#header").addEventListener("click", showAnswer); //grab the header and add Click event
-let answer = document.querySelectorAll(".answer")
+let header = document.querySelector("#header")
+header.addEventListener('click', showAnswers)
+function showAnswers () {
+  document.getElementById("a1").innerHTML = "1. Durian"
+  document.getElementById("a2").innerHTML = "4. Guava"
+  document.getElementById("a3").innerHTML = "7. Jackfruit"
+  document.getElementById("a4").innerHTML = "5. Rambutan"
+  document.getElementById("a5").innerHTML = "6. Lychee"
+  document.getElementById("a6").innerHTML = "8. Mangosteen"
+  document.getElementById("a7").innerHTML = "2. Starfruit"
+  document.getElementById("a8").innerHTML = "10. Dragonfruit"
+  document.getElementById("a9").innerHTML = "9. Longan"
+  document.getElementById("a10").innerHTML = "3. Passion Fruit"
+  checkScore()
+}
 
-function showAnswer() {
-  answer.style.visibility = "initial"
-};
 
-
-console.log(answer);
+console.log(header)
+// console.log(showAnswers())
 // console.log(question1);
 // console.log(eachQuestion)
 // FullD: function () {
 // return this.Name + " - " + this.Description}}
 // for (let i = 0; i < exoticFruits.length; i++)
+
+//Check Scoring function
+function checkScore() {
+  if (durianBox.innerHTML === document.getElementById('a1').innerHTML) {
+    durianBox.style.background = "green";
+  } else {
+    durianBox.style.background = "red";
+  }
+}
+
