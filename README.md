@@ -4,11 +4,13 @@
 https://pistolphat.github.io/Project-1-Trivia-of-Exotic-Fruits/
 
 ## Description
-This is a trivia-like game. The basic principle is to click, drag, and match the corresponding names under each picture. 
+This is a matching trivia-like game. The basic principle is to click, drag, and match the corresponding names under each picture. 
 
 For helpful hints, click on each box to display helpful information to help you determine which is the correct fruit.
 
-## Screenshot:
+To show answers - __click on the title__
+
+#### Screenshot:
 ![](fruits/Screenshot1.png)
 
 
