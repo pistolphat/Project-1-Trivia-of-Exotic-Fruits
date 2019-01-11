@@ -14,7 +14,7 @@ let exoticFruits = [
 //Description bar reset to Default Message, when clicked.
 let description = document.getElementById('description')
 description.addEventListener('click', resetD);
-function resetD () {description.innerHTML = "Ready? Click each box for additional help. CLICK & DRAG to the correct picture."};
+function resetD () {description.innerHTML = "Ready? Click each box for additional help. CLICK & DRAG to the GRAY area. (ANSWERS - Click the HERO)"};
 
 //Each clickable box, displays different statement based on different fruits.
 let durianBox = document.getElementById("durian");

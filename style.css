@@ -87,11 +87,12 @@ img {
   text-align: center;
   font-weight: bold;
   padding: 5px;
-  font-size: 18px;
+  font-size: 20px;
   border: 2px solid black;
   margin: 2px;
-  background-color: white;
-  line-height: 10px;
+  background-color: green;
+  color: white;
+  line-height: 15px;
   margin-bottom: 10px;
   /* visibility: hidden; */
 }
