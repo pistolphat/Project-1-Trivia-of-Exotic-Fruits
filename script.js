@@ -1,4 +1,4 @@
-// Arrays of 10 fruits & descriptions - push on Question Box w/ each Next Clicks
+// Arrays of 10 fruits & descriptions.
 let exoticFruits = [
   "1. Durian - Known for its pungent smell and spikey exterior, this fruit is really FOUL!",
   "2. Starfruit - This fruit is has a striking resemblance to a 5 pointed figure.",
@@ -73,7 +73,10 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 
-//make the banner, clickable to show answers
+
+
+
+//Header, clickable to show answers.
 let header = document.querySelector("#header")
 header.addEventListener('click', showAnswers)
 function showAnswers () {
@@ -87,27 +90,30 @@ function showAnswers () {
   document.getElementById("a8").innerHTML = "10. Dragonfruit"
   document.getElementById("a9").innerHTML = "9. Longan"
   document.getElementById("a10").innerHTML = "3. Passion Fruit"
-
-  // checkMatches() - still working on it **See below**
-
 }
+// checkMatches() - still working on it **See below**
+// checkMatches();
 
   // add to Scores
-let scores = []
+// let scores = []
 
 
 
 // Check Scoring function
-function checkMatches() {
-  if (durianBox.innerHTML === document.getElementById('a1').innerHTML) {
-    durianBox.style.background = "green";
-  } else {
-    durianBox.style.background = "red";
-  }
-}
 
+// function checkMatches() {
 
-// console.log(header)
+//   if (durianBox.innerHTML === document.getElementById('a1').innerHTML) {
+//     durianBox.style.background = "green";
+//   } else {
+//     durianBox.style.background = "red";
+//   }
+// }
+let answer = document.querySelectorAll(".answer")
+let boxAnswers = document.querySelectorAll(".boxAnswer")
+
+console.log(boxAnswers[0].innerHTML)
+console.log(answer[0].innerHTML)
 // console.log(showAnswers())
 // console.log(question1);
 // console.log(eachQuestion)
