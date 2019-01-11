@@ -8,7 +8,7 @@ This is a trivia-like game. The basic principle is to click, drag, and match the
 
 For helpful hints, click on each box to display helpful information to help you determine which is the correct fruit.
 
-Screenshot:
+## Screenshot:
 ![](fruits/Screenshot1.png)
 
 
@@ -21,7 +21,7 @@ Screenshot:
 * HTML / CSS / JavaScript 
 
 ## Contributions Guidelines
-* Any star-programmer is able to contribute and making a working logic. Being able to compare and score based on your matches would be very helpful.
+* Any available programmer is able to contribute and make a matching function. Being able to compare and score based on your matches would be very helpful.
 
 
-## Thank you for reading.
+#### Thank you for reading.

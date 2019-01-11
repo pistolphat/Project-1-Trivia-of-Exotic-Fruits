@@ -14,7 +14,7 @@ let exoticFruits = [
 //Description bar reset to Default Message, when clicked.
 let description = document.getElementById('description')
 description.addEventListener('click', resetD);
-function resetD () {description.innerHTML = "Click each box for additional help. CLICK & DRAG to the correct picture."};
+function resetD () {description.innerHTML = "Ready? Click each box for additional help. CLICK & DRAG to the correct picture."};
 
 //Each clickable box, displays different statement based on different fruits.
 let durianBox = document.getElementById("durian");
@@ -58,7 +58,7 @@ dragonBox.addEventListener("click", question10);
 function question10() {description.innerHTML = exoticFruits[9]};
 
 
-// Click, drag, and drop onto each picture. 
+// Click, drag, and drop onto each available spot.
 function allowDrop(ev) {
 ev.preventDefault();
 }
@@ -73,12 +73,9 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 
-
-
-
 //Header, clickable to show answers.
-let header = document.querySelector("#header")
-header.addEventListener('click', showAnswers)
+let header = document.querySelector("#headerText")
+header.addEventListener('click', showAnswers) 
 function showAnswers () {
   document.getElementById("a1").innerHTML = "1. Durian"
   document.getElementById("a2").innerHTML = "4. Guava"
@@ -90,30 +87,33 @@ function showAnswers () {
   document.getElementById("a8").innerHTML = "10. Dragonfruit"
   document.getElementById("a9").innerHTML = "9. Longan"
   document.getElementById("a10").innerHTML = "3. Passion Fruit"
-}
-// checkMatches() - still working on it **See below**
+
+  // checkMatches() - still working on it **See below**
 // checkMatches();
+}
 
-  // add to Scores
-// let scores = []
+// Scoring functionality???
+// let scores = 0
+// let scoresArray =[]
 
 
-
-// Check Scoring function
-
-// function checkMatches() {
-
-//   if (durianBox.innerHTML === document.getElementById('a1').innerHTML) {
-//     durianBox.style.background = "green";
-//   } else {
-//     durianBox.style.background = "red";
-//   }
-// }
 let answer = document.querySelectorAll(".answer")
 let boxAnswers = document.querySelectorAll(".boxAnswer")
 
-console.log(boxAnswers[0].innerHTML)
-console.log(answer[0].innerHTML)
+// function checkMatches() {
+//   for (let i = 0; i < 10; i++)
+//   if (answer[i].innerHTML === boxAnswers[i].innerHTML) {
+//     answer[i].style.background = "green";
+//   } else {
+//     answer[i].style.background = "red";
+//   }
+// }
+
+
+
+console.log(answer[8].innerHTML)
+// console.log(boxAnswers[0].innerHTML)
+
 // console.log(showAnswers())
 // console.log(question1);
 // console.log(eachQuestion)

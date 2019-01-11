@@ -1,26 +1,29 @@
 body {
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 
 #header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  padding: 5px 0 10px 0;
-  opacity: .4;
-  background-image: url("fruits/trivia2.jpg");
-  margin: 3px 0px;
-  cursor: pointer;
+  background-color: black;
+  /* height: 60px; */
+  /* padding: 5px 0 10px 0; */
+  /* opacity: .4; */
+  /* background-image: url("fruits/trivia2.jpg"); */
+  margin-bottom: 5px;
+  
 }
 
-/* #headerText {
+#headerText {
+  font-family: "Courier New", Courier, monospace;
   color: white;
-  background-color: black;
+  /* background-color: black; */
   text-align: justify;
   font-weight: bold;
-  font-size: 80px;
-} */
+  font-size: 50px;
+  cursor: pointer;
+}
 
 .mainContainer {
   display: grid;
@@ -32,6 +35,7 @@ body {
   padding: 5px 5px 15px 5px;
   border-radius: 5px;
   margin-bottom: -10px;
+  background-color: lightgray;
 }
 
 .choicesContainer {
@@ -50,19 +54,21 @@ img {
 .picbox {
   border: 3px solid black;
   border-radius: 5px;
+  margin-bottom: -8px;
   /* height: auto;
   width: auto; */
 }
 
 #description {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: 18px;
+  font-weight: bold;
   background-color: black;
   border: 2px solid goldenrod;
   color: white;
   line-height: 40px;
   text-align: center;
-
+  margin-bottom: -10px;
 }
 .boxAnswer {
   background-color: black;
@@ -90,5 +96,6 @@ img {
   margin: 2px;
   background-color: white;
   line-height: 10px;
+  margin-bottom: 10px;
   /* visibility: hidden; */
 }
