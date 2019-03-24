@@ -11,7 +11,7 @@ For helpful hints, click on each box to display helpful information to help you 
 To show answers - __click on the title__
 
 #### Screenshot:
-![](fruits/Screenshot1.png)
+![](fruits/fruitSS.png)
 
 
 ## User Stories

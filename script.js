@@ -14,7 +14,7 @@ let exoticFruits = [
 //Description bar reset to Default Message, when clicked.
 let description = document.getElementById('description')
 description.addEventListener('click', resetD);
-function resetD () {description.innerHTML = "Ready? Click each box for additional help. CLICK & DRAG to the GRAY area. (ANSWERS - Click the HERO)"};
+function resetD () {description.innerHTML = "READY? Click & Drag to each box. (Hints - Click each name for info)"};
 
 //Each clickable box, displays different statement based on different fruits.
 let durianBox = document.getElementById("durian");
@@ -92,31 +92,14 @@ function showAnswers () {
 // checkMatches();
 }
 
-// Scoring functionality???
-// let scores = 0
-// let scoresArray =[]
-
-
-let answer = document.querySelectorAll(".answer")
-let boxAnswers = document.querySelectorAll(".boxAnswer")
-
+// let answer = document.querySelectorAll(".answer")
+let boxAnswers = document.querySelector(".boxAnswer").innerHTML
+let x = document.getElementsByClassName("answer")[1].getAttribute("data-answer")
+console.log(x);
 // function checkMatches() {
-//   for (let i = 0; i < 10; i++)
-//   if (answer[i].innerHTML === boxAnswers[i].innerHTML) {
-//     answer[i].style.background = "green";
+//   if (x == boxAnswers) {
+//     document.querySelector(".answer").style.backgroundColor = "green";
 //   } else {
-//     answer[i].style.background = "red";
+//     document.querySelector(".answer").style.backgroundColor = "red";
 //   }
 // }
-
-
-
-console.log(answer[8].innerHTML)
-// console.log(boxAnswers[0].innerHTML)
-
-// console.log(showAnswers())
-// console.log(question1);
-// console.log(eachQuestion)
-// FullD: function () {
-// return this.Name + " - " + this.Description}}
-// for (let i = 0; i < exoticFruits.length; i++)
