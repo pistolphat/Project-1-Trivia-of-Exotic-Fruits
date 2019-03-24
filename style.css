@@ -1,13 +1,10 @@
 #header {
   display: flex;
   justify-content: center;
-  /* background-color: black; */
 }
 
 #headerText {
   font-family: "Courier New", Courier, monospace;
-  /* color: white; */
-  /* background-color: gray; */
   text-align: justify;
   font-weight: bold;
   font-size: 30px;
@@ -24,7 +21,6 @@
   padding: 10px;
   border-radius: 5px;
   background-color: lightgray;
-  /* height: px; */
 }
 
 .choicesContainer {
