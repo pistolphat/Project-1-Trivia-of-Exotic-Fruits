@@ -1,21 +1,22 @@
-// Arrays of 10 fruits & descriptions - push on Question Box w/ each Next Clicks
+// Arrays of 10 fruits & descriptions.
 let exoticFruits = [
-  "Durian - Known for its pungent smell and spikey exterior, it is very well known fruit in Southeast Asia.",
-  "Starfruit - Know for its citrus and tangy flavor and its striking resemblance to a 5 pointed figure.",
-  "Passion Fruit - Rich in Vitamin C, this citrus and seedy fruit is lightweight and popular in various drinks.",
-  "Guava - Common tropical fruit with a unique flavour and fragrance. The exterior is hard, but soften over time.",
-  "Rambutan - Appearance can be deceiving, this ball-size fruit has a white and flesh-like interior and a hardened seed.",
-  "Lychee - With a slightly harden shell, this fruit’s interior is sweetly scented and a large central stone.",
-  "Jackfruit - Oddly shaped, this fruit can grow really big in size and weight over a period of time. It’s yellow hue “meat” is fragrant and distinctable.",
-  "Mangosteen - Originated from Southeast Asia, this exotic fruit have a hard exterior shell, yet fibrous-like flesh.",
-  "Longan - Tropical and small size shaped, this fruit grows together in pod like branches.",
-  "Dragonfruit - Varies in size and colors, this exotic fruit contains many chia-like seeds within its white and red interior."
+  "1. Durian - Known for its pungent smell and spikey exterior, this fruit is really FOUL!",
+  "2. Starfruit - This fruit is has a striking resemblance to a 5 pointed figure.",
+  "3. Passion Fruit - This seedy, gooey, and citrus-like fruit is lightweight and popular in various drinks.",
+  "4. Guava - A common tropical fruit, this apple-like fruit is nothing like an apple. The seeds are tough, but edible.",
+  "5. Rambutan - Appearance can be deceiving, this urchin, ball-sized like fruit is nothing like you've seen before.",
+  "6. Lychee - With a slightly harden shell, this fruit’s interior is sweetly scented that contains a large central stone.",
+  "7. Jackfruit - Oddly shaped, this fruit can grow really big in size and weight over a period of time. It’s yellow color “meat” is fragrant and distinctable.",
+  "8. Mangosteen - This plum-colored fruit is hard on the oustide, fibrous on the inside.",
+  "9. Longan - Small round balls of fury, this fruit grows together in pod like branches.",
+  "10. Dragonfruit - Varies in size and colors, this exotic fruit contains many chia-like seeds within its interior."
 ];
-
+//Description bar reset to Default Message, when clicked.
 let description = document.getElementById('description')
 description.addEventListener('click', resetD);
-function resetD () {description.innerHTML = "Click on each description for help."};
+function resetD () {description.innerHTML = "READY? Click & Drag to each box. (Hints - Click each name for info)"};
 
+//Each clickable box, displays different statement based on different fruits.
 let durianBox = document.getElementById("durian");
 durianBox.addEventListener("click", question1);
 function question1() {description.innerHTML = exoticFruits[0]}
@@ -57,9 +58,9 @@ dragonBox.addEventListener("click", question10);
 function question10() {description.innerHTML = exoticFruits[9]};
 
 
-// Click, drag, and drop
+// Click, drag, and drop onto each available spot.
 function allowDrop(ev) {
-  ev.preventDefault();
+ev.preventDefault();
 }
 
 function drag(ev) {
@@ -72,8 +73,33 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 
-// console.log(exoticFruits[0]);
-// console.log(eachQuestion)
-// FullD: function () {
-// return this.Name + " - " + this.Description}}
-// for (let i = 0; i < exoticFruits.length; i++)
+//Header, clickable to show answers.
+let header = document.querySelector("#headerText")
+header.addEventListener('click', showAnswers) 
+function showAnswers () {
+  document.getElementById("a1").innerHTML = "1. Durian"
+  document.getElementById("a2").innerHTML = "4. Guava"
+  document.getElementById("a3").innerHTML = "7. Jackfruit"
+  document.getElementById("a4").innerHTML = "5. Rambutan"
+  document.getElementById("a5").innerHTML = "6. Lychee"
+  document.getElementById("a6").innerHTML = "8. Mangosteen"
+  document.getElementById("a7").innerHTML = "2. Starfruit"
+  document.getElementById("a8").innerHTML = "10. Dragonfruit"
+  document.getElementById("a9").innerHTML = "9. Longan"
+  document.getElementById("a10").innerHTML = "3. Passion Fruit"
+
+  // checkMatches() - still working on it **See below**
+// checkMatches();
+}
+
+// let answer = document.querySelectorAll(".answer")
+let boxAnswers = document.querySelector(".boxAnswer").innerHTML
+let x = document.getElementsByClassName("answer")[1].getAttribute("data-answer")
+console.log(x);
+// function checkMatches() {
+//   if (x == boxAnswers) {
+//     document.querySelector(".answer").style.backgroundColor = "green";
+//   } else {
+//     document.querySelector(".answer").style.backgroundColor = "red";
+//   }
+// }
